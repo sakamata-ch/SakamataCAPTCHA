@@ -83,6 +83,9 @@
             </div>
         </div>
     </div>
+    <script>
+        document.getElementById('captchainput').focus();
+    </script>
 </body>
 
 </html>
