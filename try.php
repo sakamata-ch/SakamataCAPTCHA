@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>沙花叉Captchaを試す</title>
+    <title>沙花叉CAPTCHAを試す</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
     <style>
         img {
@@ -67,7 +67,7 @@
         <div class="row">
             <div class="col">
                 <div class="mb-3">
-                    <h1>沙花叉Captchaを試す</h1>
+                    <h1>沙花叉CAPTCHAを試す</h1>
                 </div>
                 <form method="POST">
                     <div class="mb-3">
