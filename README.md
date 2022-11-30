@@ -1,4 +1,4 @@
-# SakamataCaptcha
+# SakamataCAPTCHA
 苦にならない人間認証を沙花叉のかわいらしい特徴的な字で提供します。
 
 ![image](https://user-images.githubusercontent.com/26180919/204713533-9ed5e65f-849a-42ad-9794-d8e03c5f85f4.png)
