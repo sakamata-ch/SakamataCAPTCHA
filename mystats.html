@@ -12,6 +12,10 @@
         .mh-25v {
             max-height: 25vh;
         }
+
+        .mh-50v {
+            max-height: 50vh;
+        }
     </style>
 </head>
 
@@ -23,8 +27,13 @@
             </div>
         </div>
         <div class="row">
-            <div class="col">
+            <div class="col text-center">
                 <canvas id="percPie" class="mh-25v"></canvas>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col text-center">
+                <canvas id="inccharPie" class="mh-50v"></canvas>
             </div>
         </div>
     </div>
@@ -41,7 +50,37 @@
                     ],
                 }]
             }
-        })
+        });
+
+        const usedChars = [
+            'あ', 'い', 'う', 'え', 'お',
+            'か', 'き', 'く', 'け', 'こ',
+            'さ', 'し', 'す', 'せ', 'そ',
+            'た', 'ち', 'つ', 'て', 'と',
+            'な', 'に', 'ぬ', 'ね', 'の',
+            'は', 'ひ', 'ふ', 'へ', 'ほ',
+            'ま', 'み', 'む', 'め', 'も',
+            'や', 'ゆ', 'よ',
+            'ら', 'り', 'る', 'れ', 'ろ',
+            'わ', 'を', 'ん'
+        ];
+
+        let charIncorData = [];
+
+        usedChars.forEach(function (v, i) {
+            charIncorData[i] = parseInt(localStorage.getItem('i:' + v) ?? '0');
+        });
+
+        new Chart(document.getElementById('inccharPie'), {
+            type: 'pie',
+            data: {
+                labels: usedChars,
+                datasets: [{
+                    data: charIncorData
+                }]
+            }
+        });
+
     </script>
 </body>
 

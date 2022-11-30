@@ -39,8 +39,20 @@
                     <a href="mystats.html" class="alert-link">正答率を確認</a>
                 </div>
                 <script>
-                    if ((localStorage.getItem('lastSeed') ?? '0') != '<?= $seed ?>')
+                    if ((localStorage.getItem('lastSeed') ?? '0') != '<?= $seed ?>') {
                         localStorage.setItem('incorrect', parseInt(localStorage.getItem('incorrect') ?? '0') + 1);
+                        <?php
+                        $incorrectChars = [];
+                        for ($i = 0; $i < mb_strlen($string); $i++) {
+                            $c_Char = mb_substr($string, $i, 1, 'UTF-8');
+                            if ($c_Char !== mb_substr($_POST['input'], $i, 1, 'UTF-8'))
+                                $incorrectChars[] = $c_Char;
+                        }
+                        ?>
+                        <?= json_encode($incorrectChars) ?>.forEach(function(v) {
+                            localStorage.setItem('i:' + v, parseInt(localStorage.getItem('i:' + v) ?? '0') + 1);
+                        });
+                    }
                 </script>
             <?php endif; ?>
             <script>
