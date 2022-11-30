@@ -10,4 +10,4 @@ PHP 8.1以上(GD, mbstringをインストールしたもの)が必要です。
 
 予め
 [Sakamata Font Project](https://github.com/sakamata-ch/SakamataFontProject)
-から`sakamata-font-0-nostrict.ttf`をダウンロードし、`try.php`や`image.php`と同じディレクトリに設置してください。
+から`sakamata-font-0-nostrict.ttf`をダウンロードし、`index.php`や`image.php`と同じディレクトリに設置してください。
