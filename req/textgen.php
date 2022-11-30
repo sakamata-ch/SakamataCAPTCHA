@@ -12,7 +12,7 @@ $hiraganas = array(
     'わ', 'を', 'ん'
 );
 
-$rawseed = $_GET['seed'] ?? $_POST['seed'] ?? null;
+$rawseed = $rawseed ?? $_GET['seed'] ?? $_POST['seed'] ?? null;
 $seed = (isset($rawseed) && is_numeric($rawseed)) ? intval($rawseed) : random_int(1, PHP_INT_MAX);
 srand($seed);
 

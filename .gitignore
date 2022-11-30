@@ -1,1 +1,5 @@
 *.ttf
+/vendor
+/config.php
+/_debugtmp
+note.md
