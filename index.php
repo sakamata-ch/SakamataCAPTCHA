@@ -81,6 +81,11 @@
                 </form>
             </div>
         </div>
+        <div class="row">
+            <div class="col">
+                ※ このCAPTCHAは沙花叉クロヱの手書き文字で構成されており、ホロライブ二次創作ガイドラインに順守する形で利用しています。
+            </div>
+        </div>
     </div>
     <script src="/assets/v1/scaptcha.js"></script>
     <script>
