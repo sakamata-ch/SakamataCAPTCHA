@@ -84,7 +84,7 @@
     </div>
     <script src="/assets/v1/scaptcha.js"></script>
     <script>
-        registerSakamataCaptcha('scc', '/', formNameS = 'seed');
+        registerSakamataCaptcha('scc', '/', formNameS = 'seed', seed = '<?= $seed ?>');
         document.getElementById('captchainput').focus();
     </script>
 </body>
