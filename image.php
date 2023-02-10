@@ -3,6 +3,7 @@
 # And modified by mkaraki
 require_once __DIR__ . '/req/textgen.php';
 header("Content-type: image/webp");
+header("Access-Control-Allow-Origin: *");
 
 $width = 500;
 $height = 200;

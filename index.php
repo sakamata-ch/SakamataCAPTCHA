@@ -71,19 +71,20 @@
                 </div>
                 <form method="POST">
                     <div class="mb-3">
-                        <img src="image.php?seed=<?= $seed ?>" alt="This is captcha image">
+                        <img id="scc" src="/assets/v1/empty.jpg" alt="This is captcha image">
                     </div>
                     <div class="mb-3">
                         <label for="captchainput" class="form-label">文字を入力</label>
                         <input type="text" class="form-control" id="captchainput" name="input" maxlength=5 minlength="5" required>
                     </div>
-                    <input type="hidden" name="seed" value="<?= $seed ?>">
                     <button type="submit" class="btn btn-primary">次へ</button>
                 </form>
             </div>
         </div>
     </div>
+    <script src="/assets/v1/scaptcha.js"></script>
     <script>
+        registerSakamataCaptcha('scc', '/', formNameS = 'seed');
         document.getElementById('captchainput').focus();
     </script>
 </body>
