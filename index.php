@@ -6,6 +6,12 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>沙花叉CAPTCHAを試す</title>
+    <meta name="description" content="沙花叉CAPTCHAは苦にならない人間認証を沙花叉のかわいらしい特徴的な字で提供します。">
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="沙花叉CAPTCHAを試す">
+    <meta property="og:description" content="沙花叉CAPTCHAは苦にならない人間認証を沙花叉のかわいらしい特徴的な字で提供します。">
+    <meta name="twitter:title" content="沙花叉CAPTCHAを試す">
+    <meta name="twitter:description" content="沙花叉CAPTCHAは苦にならない人間認証を沙花叉のかわいらしい特徴的な字で提供します。">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
     <style>
         img {
